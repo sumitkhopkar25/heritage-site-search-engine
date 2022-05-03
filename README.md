@@ -13,6 +13,10 @@ The search result provides the 10 most relevant results obtained from the search
 Another feature available is to view the images that are the most "visually similar" to the topmost heritage site retrieved.
 
 # Table of Contents
+* [Installation](https://github.com/sumitkhopkar25/heritage-site-search-engine/tree/main#installation)
+* [Usage](https://github.com/sumitkhopkar25/heritage-site-search-engine/tree/main#usage)
+* [Development](https://github.com/sumitkhopkar25/heritage-site-search-engine/tree/main#development)
+* [Acknowledgments](https://github.com/sumitkhopkar25/heritage-site-search-engine/tree/main#acknowledgments)
 
 # Installation
 Before using the website some steps need to be followed to create the dictionary of indexes of words which allow the search query to fetch the most relevant heritage site. The codes need to be run in the below sequence before running the website -
@@ -44,6 +48,9 @@ flask run
 ```
 
 Navigate to the localhost IP address and default port (which is by default http://127.0.0.1:5000/) to open the website.
+
+# Development
+The crawler code can be improved to handle all exceptions, since currently not all heritage sites are being able to be fetched. Also, the description section is not correct for the heritage sites of some countries such as India, China and the U.S. More Language Models can be tried out in place of Vector Space Model. If another language model is used then even the TF-IDF code would need to be changed since indexing is different for different retrieval algorithms. 
 
 # Acknowledgments
 The code to find the most visually similar images is acquired from the following github repository -
