@@ -30,13 +30,20 @@ Before using the website some steps need to be followed to create the dictionary
 1. make_feature_vectors.py
 2. img_similarity.py
 
-This is done to save as much metadata as we can to reduce latency at run-time while the search result is being fetched. Before running these codes please change the filepaths local to your file system. 
+This is done to save as much metadata as we can to reduce latency at run-time while the search result is being fetched. Before running these codes please change the filepaths local to your file system. The XML is parsed using the Python library "xml". This parsed text is then processed with the help of the Python Package "nltk". NLTK requires Python versions 3.7, 3.8, 3.9 or 3.10. The package can be installed using the following pip command in a command prompt -
+
+`pip install --user -U nlt`
+
+Anaconda users (like in my case) can use the below command in the Anaconda command prompt -
+
+`conda install -c anaconda nltk`
 
 Other than the regular Data Science and nltk Python libraries which you would need to install you would also need to download the corpus of nltk's stopwords (English). This can be done by opening a Python terminal and running the below code -
 
 ```
 import nltk
-nltk.download()
+nltk.download('punkt')
+nltk.download('stopwords')
 ```
 
 # Usage
